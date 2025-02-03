@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Presente Especial 🎁</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .emoji {
+            font-size: 50px;
+        }
+        .button {
+            background: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .button:hover {
+            background: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎁🤫</div>
+        <h1>Um presente de um Admirador Secreto!</h1>
+        <p>Você é uma pessoa incrível e merece ser lembrado(a) com carinho! Aproveite este mimo, pois alguém admira muito você. 😉</p>
+        <p>Curta o presente e continue brilhando! ✨</p>
+        <button class="button" onclick="reveal()">Descobrir mais</button>
+        <p id="reveal-text" style="display: none; font-weight: bold; margin-top: 15px;">Sorria! Você merece tudo de bom! 😍</p>
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById('reveal-text').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
